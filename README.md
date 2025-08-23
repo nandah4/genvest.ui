@@ -1,9 +1,13 @@
-# 🚀 Genvest
+
+
+<img src="/images/image.png" alt="Preview Genvest" width="600"/>
+
+# 🚀 Genvest - Mulai Investasi Tanpa Takut Ketipu
 
 Genvest adalah platform edukasi investasi untuk Gen Z.  
 Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, dan menghindari jebakan investasi ilegal.  
 
----
+--
 
 ## 📦 Cara Menjalankan Project
 
