@@ -1,6 +1,6 @@
 
 
-<img src="public/image.png" alt="Preview Genvest" width="600"/>
+![Preview Genvest](public/image.png)
 
 # 🚀 Genvest - Mulai Investasi Tanpa Takut Ketipu
 
