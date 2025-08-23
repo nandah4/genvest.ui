@@ -61,7 +61,7 @@ const SectionTwoHome = ({
               className="text-style-subheadline text-text-sub-headline text-center md:text-start"
             >
               Mulai dari pengenalan investasi, sampai kamu bisa langsung tanya
-              TanyaGen (Chatbot Genvest) saat bingung dengan istilah atau
+              ConsulGen (Chatbot Genvest) saat bingung dengan istilah atau
               konsep hingga melindungi dari jebakan investasi ilegal.
             </motion.p>
           </div>

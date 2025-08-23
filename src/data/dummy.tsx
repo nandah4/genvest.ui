@@ -3,27 +3,27 @@
 export const services = [
   {
     icon: "/icons/icon-program4.svg",
-    title: "Mengenalkan Investasi & Risiko",
+    title: "Mengenalkan Investasi & Tipsnya",
     description:
-      "Pelajari dasar-dasar investasi, berbagai jenis risiko yang perlu dipertimbangkan, dan strategi untuk memulai perjalanan investasi Anda dengan bijak dan terencana.",
+      "Pengertian investasi, berbagai jenis risiko tiap instrumen yang perlu dipertimbangkan, dan strategi untuk memulai perjalanan investasi Kamu dengan terencana.",
   },
   {
     icon: "/icons/icon-program1.svg",
     title: "Rekomendasi Instrumen Investasi",
     description:
-      "Dapatkan rekomendasi instrumen investasi yang tepat berdasarkan profil income dan pengeluaran Anda melalui analisis.",
+      "Dapatkan rekomendasi instrumen investasi yang tepat berdasarkan profil income dan pengeluaran Kamu melalui analisis.",
   },
   {
     icon: "/icons/icon-program2.svg",
     title: "ConsulGen - AI Assistant",
     description:
-      "Konsultasikan kebingungan Anda tentang istilah dan konsep investasi dengan AI assistant yang siap membantu 24/7 dengan jawaban yang mudah dipahami.",
+      "Konsultasikan kebingungan Kamu tentang istilah dan konsep investasi dengan AI assistant yang siap membantu 24/7 dengan jawaban yang mudah dipahami.",
   },
   {
     icon: "/icons/icon-program4.svg",
     title: "Scam Detector",
     description:
-      "Cek keaslian platform dan tawaran investasi dengan mudah. Fitur ini bantu mendeteksi indikasi penipuan sebelum kamu terlanjur rugi.",
+      "Cek keaslian platform dan tawaran investasi dengan mudah. Fitur ini bantu mendeteksi indikasi penipuan sebelum Kamu terlanjur rugi.",
   },
 ];
 

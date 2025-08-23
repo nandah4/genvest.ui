@@ -94,7 +94,7 @@ const SectionOneRec = () => {
           }}
           className="text-style-subheadline w-[80%] md:w-[60%] mx-auto text-black text-center"
         >
-          Temukan Instrument Investasimu, dan Hindari Investasi Ilegal dengan
+          Temukan Instrumen Investasimu, dan Hindari Investasi Ilegal dengan
           Scam Detector.
         </motion.p>
       </div>
