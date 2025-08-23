@@ -7,7 +7,6 @@
 Genvest adalah platform edukasi investasi untuk Gen Z.  
 Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, dan menghindari jebakan investasi ilegal.  
 
----
 
 ## 📦 Cara Menjalankan Project
 
@@ -17,21 +16,28 @@ Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, da
    git clone https://github.com/nandah4/genvest.ui.git
 
 2. Masuk ke folder project:
+   ```bash
    cd genvest
 
-3. Install dependencies:
+3. Install dependencies node:
+   ```bash
    npm install
 
 4. Jalankan development server di terminal, ketik:
+   ```bash
    npm run dev
 
 5. Buka di browser: 
-   http://localhost:3000
+   http://localhost:3000...
 
 ### 🔹 2. Buka dari Hosting
 Buka dari Hosting
 
-Kalau project sudah dihosting, cukup buka URL hosting 👉 https://genvest-ui.vercel.app/ ✨
+Cukup buka URL hosting 
+   ```bash
+   https://genvest-ui.vercel.app/
+
+### 🔹 3. Fitur
 
 🧭 Flow Pengguna
 1. Buka website → masuk ke halaman beranda.

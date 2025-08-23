@@ -8,7 +8,7 @@ const SectionFourHome = () => {
   return (
     <section className="w-full">
       <div className="lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto px-4 md:px-5">
-        <div className="flex justify-center mb-[40px] md:mb-[50px] lg:mb-[60px]">
+        <div className="flex flex-col items-center justify-center mb-[40px] md:mb-[50px] lg:mb-[60px]">
           <motion.h1
             initial={{
               opacity: 0,
@@ -25,10 +25,24 @@ const SectionFourHome = () => {
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
             viewport={{ margin: "-50px", once: false }}
-            className="text-style-headline text-center md:w-[80%] xl:w-[70%]"
+            className="text-style-headline text-center md:w-[80%] xl:w-[70%] mb-5"
           >
             Kenapa Lebih Baik Mulai Investasi Dari Sekarang, Bukan Nanti?
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, margin: "-50px" }}
+            transition={{
+              duration: 0.7,
+              ease: [0.25, 0.25, 0.25, 0.75],
+              delay: 0.3,
+            }}
+            className="text-style-subheadline text-text-sub-headline text-center mx-auto w-[85%] xl:w-[75%] "
+          >
+            Satu langkah sekarang, sejuta peluang ke depan.
+          </motion.p>
         </div>
         <CardExpandedMain />
       </div>
