@@ -1,45 +1,55 @@
-
-
 ![Preview Genvest](public/image.png)
 
-# 🚀 Genvest - Mulai Investasi Tanpa Takut Ketipu
+<h2> 🚀 Genvest - Mulai Investasi Tanpa Takut Ketipu </h2>
 
 Genvest adalah platform edukasi investasi untuk Gen Z.  
-Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, dan menghindari jebakan investasi ilegal.  
+Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, dan menghindari jebakan investasi ilegal.
 
+<h3>📦 Cara Menjalankan Project </h3>
 
-## 📦 Cara Menjalankan Project
+<h4> 🤔 1. Buka dari Repo / Download File Project </h4>
 
-### 🔹 1. Buka dari Repo / Download File Project
 1. Clone repo atau download file project:
+
    ```bash
    git clone https://github.com/nandah4/genvest.ui.git
 
+   ```
+
 2. Masuk ke folder project:
+
    ```bash
-   cd genvest
+   cd genvest.ui
+
+   ```
 
 3. Install dependencies node:
+
    ```bash
    npm install
 
+   ```
+
 4. Jalankan development server di terminal, ketik:
+
    ```bash
    npm run dev
 
-5. Buka di browser: 
+   ```
+
+5. Buka di browser:
    http://localhost:3000...
 
-### 🔹 2. Buka dari Hosting
-Buka dari Hosting
+<h4> 🤔 2. Buka dari Hosting </h4>
+Salin URL di bawah ini, dan paste di web browser mu:
 
-Cukup buka URL hosting 
    ```bash
    https://genvest-ui.vercel.app/
 
-### 🔹 3. Fitur
+   ```
 
-🧭 Flow Pengguna
+<h4> 🤔 3. Flow Pengguna </h4>
+
 1. Buka website → masuk ke halaman beranda.
 
 2. Login → untuk bisa menggunakan fitur ConsulGen.
