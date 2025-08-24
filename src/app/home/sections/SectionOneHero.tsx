@@ -130,7 +130,7 @@ const SectionOneHero = ({
                     delay: 0.4,
                   }}
                   onClick={onScrollNextSection}
-                  className="hover:scale-105 duration-300 cursor-pointer rounded-full p-1.5 bg-primary-green flex w-fit mx-auto md:mx-0 gap-x-[10px] lg:gap-x-[15px] items-center"
+                  className="hover:scale-105 duration-300 cursor-pointer rounded-full p-1.5 bg-primary-green flex w-fit mx-auto md:mx-0 gap-x-[13px] lg:gap-x-[15px] items-center"
                 >
                   <div className="bg-white p-2 rounded-full">
                     <Image
@@ -141,7 +141,7 @@ const SectionOneHero = ({
                       className="w-[20px] h-[20px] sm:w-[23px] sm:h-[23px] lg:w-[26px] lg:h-[26px] rotate-45"
                     />
                   </div>
-                  <p className="cta-button-text pr-3 lg:pr-4">Lihat Program</p>
+                  <p className="cta-button-text  pr-3 lg:pr-4">Lihat Program</p>
                 </motion.div>
               </div>
             </div>

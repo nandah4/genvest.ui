@@ -31,7 +31,7 @@ const SectionTwoEdu = () => {
           viewport={{ margin: "-50px", once: false }}
           className="text-style-headline md:mx-auto text-center md:w-[80%] xl:w-[60%] mb-[40px] "
         >
-          Sesuaikan Investasimu dengan Waktu dan Target
+          Sesuaikan Investasimu Dengan Waktu Dan Target
         </motion.h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-20 h-fit ">

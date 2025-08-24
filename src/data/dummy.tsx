@@ -1,4 +1,3 @@
-
 // Data for section 2 (program)
 export const services = [
   {
@@ -94,32 +93,38 @@ export const faqData = [
 // Data for section Testimoni
 export const reviews = [
   {
+    image: "/images/home/tes-andi.jpeg",
     name: "Andi",
     username: "Mahasiswa",
     body: "Sebelumnya aku nggak ngerti soal investasi. Tapi sejak mengenal Genvest, semuanya jadi gampang dipahami. Serius, ini keren banget!",
   },
   {
+    image: "/images/home/tes-putri.jpeg",
     name: "Putri Besari",
     username: "Karyawan Swasta",
     body: "Biasanya aku bingung mau mulai dari mana. Genvest kasih panduan step-by-step yang bikin aku percaya diri buat mulai investasi.",
   },
   {
+    image: "/images/home/tes-budi.jpeg",
     name: "Budi Gunawan",
     username: "Wirausaha",
     body: "Aku pikir investasi itu ribet dan cuma buat orang kaya. Ternyata modal kecil pun bisa mulai.",
   },
   {
+    image: "/images/home/tes-gwen.jpeg",
     name: "Gwen",
     username: "Ibu Rumah Tangga",
-    body: "Paling suka sama fitur TanyaGen! Setiap aku bingung istilah investasi, langsung tanya dan dapet jawaban jelas.",
+    body: "Paling suka sama fitur ConsulGen! Setiap aku bingung istilah investasi, langsung tanya dan dapet jawaban jelas.",
   },
   {
-    name: "Rina",
+    image: "/images/home/tes-rina.jpeg",
+    name: "Rina Molina",
     username: "Freelancer",
     body: "Sebelum kenal Genvest, uangku cuma numpuk di tabungan. Sekarang bisa berkembang lewat instrumen yang aman dan sesuai profil risiko.",
   },
   {
-    name: "Ardi",
+    image: "/images/home/tes-ardi.jpeg",
+    name: "Ardi Fathur",
     username: "Desainer Grafis",
     body: "Desain aplikasinya friendly banget buat Gen Z. Nggak kaku. Rasanya kayak ngobrol sama temen sendiri.",
   },

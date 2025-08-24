@@ -47,7 +47,7 @@ const SectionTwoHome = ({
               }}
               className="text-style-headline text-center md:text-start"
             >
-              Yuk, Lihat Apa yang kamu dapatkan di sini.
+              Yuk, Lihat Apa Yang Kamu Dapatkan Di Sini.
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 30 }}

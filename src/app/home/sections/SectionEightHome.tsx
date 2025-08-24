@@ -12,10 +12,12 @@ const ReviewCard = ({
   name,
   username,
   body,
+  image,
 }: {
   name: string;
   username: string;
   body: string;
+  image: string;
 }) => {
   return (
     <figure
@@ -27,23 +29,17 @@ const ReviewCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="w-fit mb-5 flex justify-center items-center rounded-full p-3 bg-primary-green">
-        <Image
-          src="/icons/envelope-heart-black.svg"
-          alt="Icon Message"
-          width={20}
-          height={20}
-          className=" w-7 h-7"
-        />
+      <div className="mb-5 h-11 w-11 md:w-12 md:h-12 border border-primary-green flex overflow-hidden justify-center items-center rounded-full bg-primary-green relative">
+        <Image src={image} alt={name + " Pic"} fill  className="object-cover"/>
       </div>
-      <blockquote className="font-helvetica mb-3 text-[15px] md:text-base">
+      <blockquote className="font-helvetica font-light mb-3 text-[15px] md:text-base">
         {body}
       </blockquote>
       <div className="flex flex-row items-center gap-x-4">
         <div className="flex flex-col">
           <figcaption className="font-helvetica text-sm md:text-base font-normal dark:text-white">
             {name} -{" "}
-            <span className="font-helvetica text-sm  font-bold dark:text-white/40">
+            <span className="font-helvetica text-sm  dark:text-white/40">
               {username}
             </span>
           </figcaption>
@@ -91,7 +87,7 @@ const SectionEightHome = () => {
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
             viewport={{ margin: "-50px", once: false }}
-            className="text-style-headline md:mx-auto text-center md:w-[80%] xl:w-[70%] mb-[40px] md:mb-[50px] "
+            className="text-style-headline md:mx-auto text-center md:w-[65%] lg:w-[70%] xl:w-[60%] mb-[40px] md:mb-[50px] "
           >
             Kata Mereka Yang Sudah Memulai Investasi
           </motion.h1>

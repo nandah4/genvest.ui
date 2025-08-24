@@ -395,7 +395,7 @@ const SectionStoriesHome = () => {
                     </>
                   ) : (
                     <>
-                      <h5 className="title-inner-card !font-normal lg:!text-lg xl:!text-[20px]  !text-black mt-5">
+                      <h5 className="title-inner-card !font-normal lg:!text-lg xl:!text-[20px]  !text-black ">
                         {stories[selectStory].title}
                       </h5>
                       <div className="space-y-3 mb-[30px]">

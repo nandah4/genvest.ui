@@ -31,7 +31,7 @@ const CtaSectionHome = () => {
             <Link href="/edukasi">
               <button className="group relative rounded-full bg-black px-6 py-3 lg:px-8 lg:py-4 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <p className="relative cta-button-text !text-primary-green z-10">
-                  Belajar Sekarang
+                  Panduan Investasi
                 </p>
               </button>
             </Link>

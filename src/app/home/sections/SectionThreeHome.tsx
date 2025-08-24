@@ -39,7 +39,7 @@ const SectionThreeHome = () => {
               }}
               className="text-center md:text-start text-style-headline text-black"
             >
-              Apa itu Investasi
+              Apa Itu Investasi
             </motion.h1>
 
             <div className="space-y-[10px] lg:pl-[60px] lg:border-l-2  border-primary-green">
