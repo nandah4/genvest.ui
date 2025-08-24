@@ -69,11 +69,11 @@ const LoginPage = () => {
                     </div>
                   </div>
                 </div>
-                <p className="my-1 text-style-subheadline !font-normal lg:!text-base !text-end">
+                <p className="my-1 underline text-style-subheadline !font-normal lg:!text-base !text-end">
                   Lupa Password?
                 </p>
                 <Link href="/">
-                  <button className="py-3 w-full cursor-pointer hover:scale-105 duration-500 shadow bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-md">
+                  <button className="py-3 w-full cursor-pointer hover:scale-105 duration-500 shadow bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full">
                     Masuk
                   </button>
                 </Link>
@@ -81,7 +81,7 @@ const LoginPage = () => {
                 <p className="my-1 text-style-subheadline !font-normal lg:!text-base !text-center">
                   Atau
                 </p>
-                <button className="py-3 cursor-pointer hover:scale-105 duration-500 shadow w-full bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-md flex gap-x-3 items-center justify-center">
+                <button className="py-3 cursor-pointer hover:scale-105 duration-500 shadow w-full bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full flex gap-x-3 items-center justify-center">
                   <div className=" h-6 w-6 relative ">
                     <Image src="/icons/google.svg" alt="Genvest Logo" fill />
                   </div>

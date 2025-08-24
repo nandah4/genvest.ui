@@ -53,7 +53,7 @@ const SectionEightHome = () => {
     <section className="py-20">
       <div>
         {/* Headline */}
-        <div className="space-y-5 ">
+        <div className="space-y-5  px-4 md:px-5">
           <motion.div
             initial={{ y: 30, opacity: 0, scale: 0.9 }}
             whileInView={{ y: 0, opacity: 1, scale: 1 }}
@@ -87,9 +87,9 @@ const SectionEightHome = () => {
               ease: [0.25, 0.46, 0.45, 0.94],
             }}
             viewport={{ margin: "-50px", once: false }}
-            className="text-style-headline md:mx-auto text-center md:w-[65%] lg:w-[70%] xl:w-[60%] mb-[40px] md:mb-[50px] "
+            className="text-style-headline md:mx-auto text-center lg:w-[70%] xl:w-[60%] mb-[40px] md:mb-[50px] "
           >
-            Kata Mereka Yang Sudah Memulai Investasi
+            Kata Mereka Yang Sudah Memulai
           </motion.h1>
         </div>
 

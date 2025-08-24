@@ -47,7 +47,7 @@ const SectionTwoHome = ({
               }}
               className="text-style-headline text-center md:text-start"
             >
-              Yuk, Lihat Apa Yang Kamu Dapatkan Di Sini.
+              Yuk, Lihat Apa Yang Kamu Dapatkan Di Sini
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 30 }}
@@ -80,7 +80,7 @@ const SectionTwoHome = ({
                 }}
                 className=" flex items-center gap-x-5 "
               >
-                <p className="font-helvetica text-[12px] sm:text-sm text-text-sub-headline">
+                <p className="font-helvetica text-sm text-text-sub-headline">
                   Scroll Ke {progress * 100 > 90 ? "Kiri" : "Kanan"} Untuk
                   Melihat Semua.
                 </p>

@@ -158,9 +158,9 @@ const SectionOneHero = ({
                     ease: [0.25, 0.25, 0.25, 0.75],
                     delay: 0.1,
                   }}
-                  className="font-helvetica text-[20px] md:text-[25px] font-normal text-white uppercase text-center md:text-start"
+                  className="font-helvetica text-[20px] md:text-2xl font-normal text-white uppercase text-center md:text-start"
                 >
-                  Misi Genvest
+                  Seberapa Jauh Genvest Sudah Melangkah.
                 </motion.p>
 
                 {/* Statistik */}
