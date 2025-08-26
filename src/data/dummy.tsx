@@ -263,43 +263,43 @@ export const mistakeData = [
 // Data for Section 4 Page 2
 export const investmentSteps = [
   {
-    step: 1,
+    step: "Pertama",
     title: "Menetapkan tujuan finansial yang jelas.",
     description:
       "Langkah pertama dalam berinvestasi adalah menetapkan tujuan finansial yang jelas.",
   },
   {
-    step: 2,
+    step: "Kedua",
     title: "Pilih Jenis Investasi yang Tepat.",
     description:
       "Sesuaikan jenis investasi dengan profil risiko dan tujuan keuangan Anda.",
   },
   {
-    step: 3,
+    step: "Ketiga",
     title: "Tentukan Jangka Waktu Investasi.",
     description:
       "Pilih horizon waktu investasi yang sesuai dengan tujuan finansial Anda.",
   },
   {
-    step: 4,
+    step: "Keempat",
     title: "Tentukan Besarnya Dana yang Akan Diinvestasikan.",
     description: "Tetapkan jumlah dana yang siap Anda investasikan.",
   },
   {
-    step: 5,
+    step: "Kelima",
     title: "Pilih Perusahaan Sekuritas atau Bank yang Tepat.",
     description:
       "Pilih institusi keuangan yang terpercaya dan sesuai dengan kebutuhan Anda.",
   },
   {
-    step: 6,
+    step: "Keenam",
     title:
       "Buka Rekening Efek atau Rekening Dana untuk berinvestasi di pasar modal.",
     description:
       "Untuk berinvestasi di pasar modal, Anda perlu membuka rekening efek.",
   },
   {
-    step: 7,
+    step: "Ketujuh",
     title: "Yuk, Mulai Investasi 🚀.",
     description:
       "Setelah langkah-langkah di atas dipersiapkan, mulailah melakukan investasi sesuai dengan rencana yang telah Anda tetapkan.",

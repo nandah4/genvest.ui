@@ -41,7 +41,7 @@ const SectionThreeEdu = () => {
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
               viewport={{ margin: "-50px", once: false }}
-              className="text-style-headline text-center md:text-start"
+              className="text-style-headline text-center  md:w-[80%] xl:w-[60%] mx-auto"
             >
               Jenis Instrumen Dalam Investasi
             </motion.h1>
@@ -54,7 +54,7 @@ const SectionThreeEdu = () => {
                 ease: [0.25, 0.25, 0.25, 0.75],
                 delay: 0.3,
               }}
-              className="text-style-subheadline text-text-sub-headline text-center md:text-start lg:w-[85%] xl:w-[75%]"
+              className="text-style-subheadline text-text-sub-headline text-center mx-auto w-[85%] xl:w-[70%]"
             >
               Dari resiko yang bikin santai sampai yang bikin deg-degan, Tapi
               tenang tinggal klik untuk ketahui resikonya.

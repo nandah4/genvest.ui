@@ -58,7 +58,7 @@ const SectionTwoHome = ({
                 ease: [0.25, 0.25, 0.25, 0.75],
                 delay: 0.3,
               }}
-              className="text-style-subheadline text-text-sub-headline text-center md:text-start"
+              className="text-style-subheadline text-text-sub-headline text-center md:text-start md:pr-5 lg:pr-10"
             >
               Mulai dari pengenalan investasi, sampai kamu bisa langsung tanya
               ConsulGen (Chatbot Genvest) saat bingung dengan istilah atau

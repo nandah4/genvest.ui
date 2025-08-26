@@ -2,6 +2,7 @@
 
 import { investmentSteps } from "@/data/dummy";
 import { motion } from "framer-motion";
+import React from "react";
 import { useState } from "react";
 
 type CardItemProps = {
@@ -67,7 +68,7 @@ const SectionFourEdu = () => {
   return (
     <section className="bg-white py-20">
       <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto px-4 md:px-5">
-        <div className="space-y-7 lg:hidden mb-[45px] md:mb-[50px] ">
+        <div className="space-y-7  mb-[40px] md:mb-[50px] lg:mb-20 ">
           <motion.div
             initial={{ y: 30, opacity: 0, scale: 0.9 }}
             whileInView={{ y: 0, opacity: 1, scale: 1 }}
@@ -108,90 +109,111 @@ const SectionFourEdu = () => {
         </div>
 
         {/* Content When vw <= md */}
-        <div className="md:hidden flex flex-col space-y-2">
+        <div className=" grid grid-cols-1 gap-y-2 md:grid-cols-3 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl md:mx-auto">
           {investmentSteps.map((e, idx) => (
-            <motion.div
-              key={idx + e.description}
-              className="flex gap-x-5"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: idx * 0.1,
-                ease: "easeOut",
-              }}
-              viewport={{ once: false, margin: "-30px" }}
-            >
-              <div className="items-center flex flex-col space-y-2">
-                <motion.button
-                  onClick={() => handleSelected(idx)}
-                  className={`rounded-full title-inner-card h-12 w-12 flex-shrink-0 ${
-                    idx <= selectedCard ? "bg-primary-green" : "bg-white border"
-                  }`}
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
+            <React.Fragment key={idx + e.description}>
+              <div className="hidden md:block md:col-span-1 pr-5">
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.5,
-                    delay: idx * 0.1 + 0.2,
-                    type: "spring",
-                    stiffness: 200,
+                    delay: idx * 0.1 + 0.3,
                   }}
-                  viewport={{ once: false }}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                  viewport={{ once: false, margin: "-30px" }}
+                  className="text-style-subheadline md:!text-base"
                 >
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.3,
-                      delay: idx * 0.1 + 0.4,
-                    }}
-                    viewport={{ once: false }}
-                  >
-                    {e.step}
-                  </motion.span>
-                </motion.button>
-                {idx != investmentSteps.length - 1 ? (
-                  <motion.div
-                    className={`h-10 w-[2px] rounded-full ${
-                      idx <= selectedCard
-                        ? "bg-primary-green"
-                        : "bg-minor-grey border border-minor-grey"
-                    }`}
-                    initial={{ scaleY: 0, originY: 0 }}
-                    whileInView={{ scaleY: 1 }}
-                    transition={{
-                      duration: 0.4,
-                      delay: idx * 0.1 + 0.3,
-                    }}
-                    viewport={{ once: false }}
-                  />
-                ) : (
-                  <></>
-                )}
+                  {selectedCard >= idx
+                    ? "Yeay, Kamu sudah melewati tahap ini 🎉"
+                    : "Yahh, Kamu belum melewati tahap ini 😩"}
+                </motion.p>
               </div>
               <motion.div
-                className="flex items-start text-style-subheadline !text-base"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                key={idx + e.description}
+                className="flex gap-x-5 md:gap-x-10 lg:gap-x-20 md:col-span-2"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{
-                  duration: 0.5,
-                  delay: idx * 0.1 + 0.3,
+                  duration: 0.6,
+                  delay: idx * 0.1,
+                  ease: "easeOut",
                 }}
                 viewport={{ once: false, margin: "-30px" }}
               >
-                {e.title}
+                <div className="items-center flex flex-col space-y-2">
+                  <motion.button
+                    onClick={() => handleSelected(idx)}
+                    className={`rounded-full cursor-pointer hover:scale-105 duration-500 title-inner-card h-12 w-12 flex-shrink-0 ${
+                      idx <= selectedCard
+                        ? "bg-primary-green"
+                        : "bg-white border"
+                    }`}
+                    initial={{ scale: 0.9 }}
+                    whileInView={{ scale: 1 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: idx * 0.1 + 0.2,
+                      type: "spring",
+                      stiffness: 200,
+                    }}
+                    viewport={{ once: false }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <motion.span
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: idx * 0.1 + 0.4,
+                      }}
+                      viewport={{ once: false }}
+                    >
+                      {idx + 1}
+                    </motion.span>
+                  </motion.button>
+                  {idx != investmentSteps.length - 1 ? (
+                    <motion.div
+                      className={`h-16 lg:h-20 xl:h-24 w-[2px] rounded-full ${
+                        idx <= selectedCard
+                          ? "bg-primary-green"
+                          : "bg-minor-grey border border-minor-grey"
+                      }`}
+                      initial={{ scaleY: 0, originY: 0 }}
+                      whileInView={{ scaleY: 1 }}
+                      transition={{
+                        duration: 0.4,
+                        delay: idx * 0.1 + 0.3,
+                      }}
+                      viewport={{ once: false }}
+                    />
+                  ) : (
+                    <></>
+                  )}
+                </div>
+                <motion.div
+                  className="flex flex-col items-start gap-y-1 lg:gap-y-3"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    delay: idx * 0.1 + 0.3,
+                  }}
+                  viewport={{ once: false, margin: "-30px" }}
+                >
+                  <p className="font-helvetica text-base  md:text-lg lg:text-xl">
+                    Langkah {e.step}
+                  </p>
+                  <p className="text-style-subheadline">{e.description}</p>
+                </motion.div>
               </motion.div>
-            </motion.div>
+            </React.Fragment>
           ))}
         </div>
 
         {/* Content When vw >= md */}
-        <div className="hidden md:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
-          <div className="hidden lg:block">
-            
-          </div>
+        {/* <div className="hidden grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+          <div className="hidden lg:block"></div>
 
           <CardItem
             step={investmentSteps[0].step}
@@ -227,9 +249,7 @@ const SectionFourEdu = () => {
             setSelected={handleSelected}
           ></CardItem>
 
-          <div className="hidden md:block lg:hidden">
-            
-          </div>
+          <div className="hidden md:block lg:hidden"></div>
           <CardItem
             step={investmentSteps[2].step}
             title={investmentSteps[2].title}
@@ -285,7 +305,7 @@ const SectionFourEdu = () => {
             selected={selectedCard}
             setSelected={handleSelected}
           ></CardItem>
-        </div>
+        </div> */}
       </div>
     </section>
   );

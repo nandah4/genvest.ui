@@ -7,7 +7,7 @@ const CtaSectionHome = () => {
   return (
     <section className="w-full px-4 md:px-5 mb-10">
       {/* Overlay */}
-      <div className=" lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto bg-primary-green rounded-lg relative py-20 lg:py-24 overflow-hidden">
+      <div className=" lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto bg-primary-green rounded-2xl relative py-20 lg:py-24 overflow-hidden">
         <div className="absolute z-0 -right-4 -bottom-0 h-fit w-fit">
           <div className="h-[200px] w-[150px] lg:h-[300px] lg:w-[200px] relative">
             <Image src="/images/home/fail.png" alt="Failed Pic" fill />

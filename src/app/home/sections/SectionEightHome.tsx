@@ -68,7 +68,7 @@ const SectionEightHome = () => {
               viewport={{ margin: "-50px", once: false }}
               className="text-style-subheadline lg:!text-base !font-normal"
             >
-              Testimoni
+              Testimoni 👨‍💻
             </motion.p>
           </motion.div>
           <motion.h1

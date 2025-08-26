@@ -80,7 +80,7 @@ const SectionTipsEdu = () => {
                           </p>
                         </div>
 
-                        <p className="font-helvetica text-[15px] sm:text-base font-light text-black">
+                        <p className="font-helvetica selection:bg-primary-green text-[15px] sm:text-base font-light text-black">
                           {e.do}
                         </p>
                       </>
@@ -119,7 +119,7 @@ const SectionTipsEdu = () => {
                           </p>
                         </div>
 
-                        <p className="font-helvetica text-[15px] sm:text-base  font-light text-black">
+                        <p className="font-helvetica selection:bg-primary-green text-[15px] sm:text-base  font-light text-black">
                           {e.dont}
                         </p>
                       </>
@@ -268,7 +268,7 @@ const SectionTipsEdu = () => {
                           ease: [0.25, 0.25, 0.25, 0.75],
                           delay: 0.35 + idx * 0.1,
                         }}
-                        className="text-style-subheadline text-center text-black"
+                        className=" selection:bg-primary-green text-style-subheadline text-center text-black"
                       >
                         {e.do}
                       </motion.p>
@@ -295,7 +295,7 @@ const SectionTipsEdu = () => {
                           ease: [0.25, 0.25, 0.25, 0.75],
                           delay: 0.45 + idx * 0.1,
                         }}
-                        className="text-style-subheadline text-center text-black"
+                        className="selection:bg-primary-green text-style-subheadline text-center text-black"
                       >
                         {e.dont}
                       </motion.p>

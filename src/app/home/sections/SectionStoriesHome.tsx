@@ -186,13 +186,12 @@ const SectionStoriesHome = () => {
                     <h5 className="title-inner-card text-black">{e.title}</h5>
                     <p className="desc-inner-card text-black">{e.shortDesc}</p>
                     <motion.button
-                      whileHover={{ scale: 1.05, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={() => {
                         setOverlay(true);
                         setStory(idx);
                       }}
-                      className="mt-[5px] cursor-pointer rounded-full bg-primary-green px-7 py-3 cta-button-text transition-all duration-200 hover:shadow-lg"
+                      className="mt-[5px] cursor-pointer hover:scale-105 rounded-full bg-primary-green px-7 py-3 cta-button-text transition-all duration-500 hover:shadow-md"
                     >
                       Baca Kisahnya
                     </motion.button>
@@ -271,20 +270,19 @@ const SectionStoriesHome = () => {
                         ease: "easeOut",
                         delay: 0.3,
                       }}
-                      className="hidden h-full md:flex flex-col justify-center items-start p-3 gap-y-5"
+                      className="hidden h-full md:flex flex-col justify-center items-end p-3 gap-y-5"
                     >
-                      <h5 className="title-inner-card text-black">{e.title}</h5>
-                      <p className="desc-inner-card text-black">
+                      <h5 className="title-inner-card text-black !text-end">{e.title}</h5>
+                      <p className="desc-inner-card text-black !text-end">
                         {e.shortDesc}
                       </p>
                       <motion.button
-                        whileHover={{ scale: 1.05, y: -2 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => {
                           setOverlay(true);
                           setStory(idx);
                         }}
-                        className="mt-[5px] cursor-pointer rounded-full bg-primary-green px-7 py-3 cta-button-text transition-all duration-200 hover:shadow-lg"
+                        className="mt-[5px] cursor-pointer hover:scale-105 rounded-full bg-primary-green px-7 py-3 cta-button-text transition-all duration-500 hover:shadow-md"
                       >
                         Baca Kisahnya
                       </motion.button>

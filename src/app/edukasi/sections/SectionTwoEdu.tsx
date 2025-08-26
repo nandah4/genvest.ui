@@ -11,7 +11,7 @@ const SectionTwoEdu = () => {
   };
 
   return (
-    <section className="bg-white py-20 h-fit">
+    <section className="bg-white py-24 h-fit">
       <div className="lg:max-w-6xl xl:max-w-[1440px] h-full sm:mx-auto px-4 md:px-5 relative">
         <motion.h1
           initial={{
@@ -49,7 +49,7 @@ const SectionTwoEdu = () => {
                 duration: 0.7,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
-              className="title-inner-card  md:text-start uppercase text-center"
+              className="title-inner-card  md:text-start text-center"
             >
               Tahapan Waktu Investasi 
             </motion.h3>
@@ -92,7 +92,7 @@ const SectionTwoEdu = () => {
               whileInView={{ y: 0, opacity: 1, scale: 1 }}
               transition={{ delay: 0.1, duration: 0.2 }}
               viewport={{ margin: "-50px", once: false }}
-              className="w-fit px-5 py-2 md:py-2.5 overflow-hidden rounded-md bg-primary-green mx-auto md:mx-0"
+              className="w-fit px-5 py-2 md:py-2.5 overflow-hidden rounded-full bg-primary-green mx-auto md:mx-0"
             >
               <motion.p
                 initial={{ y: 30, opacity: 0 }}
@@ -109,7 +109,7 @@ const SectionTwoEdu = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.2 }}
               viewport={{ margin: "-50px", once: false }}
-              className="title-inner-card  md:text-start uppercase text-center"
+              className="title-inner-card  md:text-start text-center"
             >
               {dataTarget[selectedYear].title}
             </motion.h3>
@@ -118,7 +118,7 @@ const SectionTwoEdu = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.2 }}
               viewport={{ margin: "-50px", once: false }}
-              className="text-style-subheadline text-center md:text-start"
+              className="text-style-subheadline text-center md:text-start md:pr-5 lg:pr-10"
             >
               {dataTarget[selectedYear].description}
             </motion.p>

@@ -9,7 +9,7 @@ const CtaSectionEdu = () => {
      
     >
       {/* Overlay */}
-      <div className=" lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto rounded-lg  h-full relative py-20 lg:py-32 overflow-hidden bg-primary-green">
+      <div className=" lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto rounded-2xl  h-full relative py-20 lg:py-32 overflow-hidden bg-primary-green">
         <div className=" absolute z-0 -right-5 lg:left-55 -bottom-10 lg:-bottom-12 h-fit w-fit">
           <div className="h-[240px] w-[170px] md:h-[280px] md:w-[170px] lg:h-[340px] lg:w-[220px]  relative">
             <Image src="/images/education/woman.png" alt="Failed Pic" fill />

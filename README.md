@@ -52,7 +52,7 @@ Salin URL di bawah ini, dan paste di web browser mu:
 
 1. Buka website → masuk ke halaman beranda.
 
-2. Login → untuk bisa menggunakan fitur ConsulGen.
+2. Login → untuk bisa menggunakan fitur ConsulGen. (Klik Masuk dengan Email)
 
 3. Jelajahi Beranda → temukan informasi utama dan highlight fitur.
 
@@ -60,7 +60,7 @@ Salin URL di bawah ini, dan paste di web browser mu:
 
 5. Deteksi & Rekomendasi → cek apakah investasi legal & temukan instrumen sesuai profilmu.
 
-6. ConsulGen → konsultasi interaktif tentang investasi dengan AI.
+6. ConsulGen → konsultasi interaktif tentang investasi dengan AI. (Klik Profile untuk kembali ke Beranda)
 
 7. Selesai 🎉 → Selamat mencoba fitur-fitur Genvest 🚀
 
