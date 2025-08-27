@@ -11,8 +11,8 @@ const SectionTwoEdu = () => {
   };
 
   return (
-    <section className="bg-white py-24 h-fit">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] h-full sm:mx-auto px-4 md:px-5 relative">
+    <section className="bg-white py-20 md:py-28 h-fit">
+      <div className="xl:max-w-[1900px] padding-x h-full sm:mx-auto relative">
         <motion.h1
           initial={{
             opacity: 0,

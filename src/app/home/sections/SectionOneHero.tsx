@@ -30,7 +30,7 @@ const SectionOneHero = ({
   return (
     <section
       ref={refHero}
-      className="w-full h-fit lg:h-[900px] bg-gray-400 overflow-hidden"
+      className="w-full h-fit lg:h-[950px] bg-gray-400 overflow-hidden"
       style={{
         backgroundImage: "url(/images/home/bg-hero.jpeg)",
         backgroundSize: "cover",
@@ -147,7 +147,7 @@ const SectionOneHero = ({
             </div>
 
             <div className="order-1  lg:pb-[45px] col-span-2 mb-[30px] lg:mb-0 lg:order-none lg:flex lg:justify-end">
-              <div className=" flex flex-col lg:justify-end lg:w-[80%] xl:w-[75%] gap-y-[25px]">
+              <div className=" flex flex-col lg:justify-end lg:w-[80%] xl:w-[70%] 2xl:w-[60%]   gap-y-[25px]">
                 {/* Mission Title */}
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}

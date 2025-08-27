@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const SectionFourHome = () => {
   return (
     <section className="w-full">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto px-4 md:px-5">
+      <div className="lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto padding-x">
         <div className="flex flex-col items-center justify-center mb-[40px] md:mb-[50px] lg:mb-[60px]">
           <motion.h1
             initial={{

@@ -20,8 +20,8 @@ const SectionThreeEdu = () => {
   }, [overlayOpen]);
 
   return (
-    <section className=" py-20 bg-white relative">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto w-full px-4 md:px-5 ">
+    <section className=" py-20 md:py-28 bg-white relative">
+      <div className="xl:max-w-[1900px] padding-x sm:mx-auto w-full ">
         {/* Headline */}
         <div className="mb-[40px] lg:mb-[50px] gap-y-5 md:gap-0 ">
           <div className="space-y-[15px] ">

@@ -10,26 +10,17 @@ const SectionFiveHome = () => {
 
   return (
     <>
-      <section className="bg-minor-grey/90 py-[120px] overflow-hidden relative my-20 ">
-        <div className="absolute h-[400px] w-[400px] md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] duration-700  rounded-full bg-primary-green/90 bottom-[-50%] sm:bottom-[-65%] md:bottom-[-80%] xl:bottom-[-110%] right-1/2 translate-x-[50%] z-0 blur-3xl"></div>
-        <div className="z-10 lg:max-w-6xl xl:max-w-[1440px]  duration-500 sm:mx-auto px-4 md:px-5 ">
+      <section
+        className="bg-minor-grey/40 py-20 md:py-28 overflow-hidden relative my-20 "
+        style={{
+          backgroundImage: "url(/images/home/patter-faq.png)",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="absolute h-[400px] w-[400px] md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] duration-700  rounded-full bg-primary-green/80 bottom-[-50%] sm:bottom-[-65%] md:bottom-[-80%] xl:bottom-[-110%] right-1/2 translate-x-[50%] z-0 blur-3xl"></div>
+        <div className="z-10 xl:max-w-[1900px] duration-500 sm:mx-auto padding-x ">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-y-[40px]">
             <div className="md:col-span-3  md:order-2 md:flex md:justify-end relative">
-              {/* Decorative Quote Mark - Opening */}
-              <motion.span
-                initial={{ opacity: 0, scale: 0.3, rotate: -15 }}
-                whileInView={{ opacity: 0.15, scale: 1, rotate: 0 }}
-                viewport={{ once: false, margin: "-100px" }}
-                transition={{
-                  duration: 1.0,
-                  ease: [0.25, 0.25, 0.25, 0.75],
-                  delay: 1.8,
-                }}
-                className="absolute -top-8 -left-2 md:-left-6 lg:-left-10 text-black text-7xl md:text-8xl lg:text-9xl font-serif select-none pointer-events-none z-0"
-              >
-                {`"`}
-              </motion.span>
-
               <motion.h1
                 className="font-helvetica w-[95%] mx-auto lg:w-[90%] uppercase text-[35px] leading-11 md:text-[40px] md:leading-14 lg:text-[45px] lg:leading-16 xl:text-[50px] xl:leading-[70px]  z-10 text-center md:text-start font-medium relative"
                 initial="hidden"
@@ -76,21 +67,6 @@ const SectionFiveHome = () => {
                   </motion.span>
                 ))}
               </motion.h1>
-
-              {/* Decorative Quote Mark - Closing */}
-              <motion.span
-                initial={{ opacity: 0, scale: 0.3, rotate: 15 }}
-                whileInView={{ opacity: 0.15, scale: 1, rotate: 0 }}
-                viewport={{ once: false, margin: "-100px" }}
-                transition={{
-                  duration: 1.0,
-                  ease: [0.25, 0.25, 0.25, 0.75],
-                  delay: 2.2,
-                }}
-                className="absolute -bottom-8 -right-2 md:-right-6 lg:-right-10 text-primary-green text-7xl md:text-8xl lg:text-9xl font-serif select-none pointer-events-none z-0"
-              >
-                {`"`}
-              </motion.span>
             </div>
 
             {/* Card Image */}

@@ -4,7 +4,7 @@ import Link from "next/link";
 const FullPageChat = () => {
   return (
     <section className="bg-minor-grey h-dvh flex justify-center items-center px-4 md:px-5 relative">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto flex justify-end absolute h-fit inset-0 p-4 md:p-5">
+      <div className="xl:max-w-[1900px] padding-x mx-auto flex justify-end absolute h-fit inset-0 py-4 md:py-5">
         <div className="flex gap-x-5 items-center">
           <p className="font-helvetica underline md:text-lg">Hai, Faisal</p>
 
@@ -16,7 +16,7 @@ const FullPageChat = () => {
         </div>
       </div>
       {/* Main Content */}
-      <div className="max-w-2xl w-full flex flex-col gap-y-5 md:gap-y-7 lg:gap-y-10 justify-center items-center">
+      <div className="max-w-2xl xl:max-w-4xl w-full flex flex-col gap-y-5 md:gap-y-7 lg:gap-y-10 justify-center items-center">
         <div className="flex gap-x-4 items-center">
           <div className="h-10 w-10 relative">
             <Image src="/icons/ask-ai/Subtract.svg" alt="Genvest Icon" fill />
@@ -71,7 +71,7 @@ const FullPageChat = () => {
           </div>
 
           <div className="absolute bottom-4 inset-x-4 flex  gap-x-4 gap-y-2 items-start">
-            <div className="w-full shadow cursor-pointer hover:scale-105 duration-500 p-3 flex items-center justify-start gap-x-4  rounded-lg bg-primary-green">
+            <div className="w-full shadow cursor-pointer hover:scale-105 duration-500 p-4 flex items-center justify-start gap-x-4  rounded-full bg-primary-green">
               <div className="h-5 w-5  relative">
                 <Image
                   src="/icons/ask-ai/generate-chat.svg"
@@ -84,7 +84,7 @@ const FullPageChat = () => {
               </p>
             </div>
 
-            <div className="w-full shadow cursor-pointer hover:scale-105 duration-500 p-3 hidden sm:flex items-center justify-start gap-x-4  rounded-lg bg-primary-green">
+            <div className="w-full shadow cursor-pointer hover:scale-105 duration-500 p-4 hidden sm:flex items-center justify-start gap-x-4  rounded-full bg-primary-green">
               <div className="h-5 w-5  relative">
                 <Image
                   src="/icons/ask-ai/generate-chat.svg"

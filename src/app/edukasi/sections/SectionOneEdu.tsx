@@ -18,7 +18,7 @@ const SectionOneEdu = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="lg:max-w-6xl xl:max-w-[1440px] h-full md:flex md:justify-center md:items-center sm:mx-auto px-4 md:px-5 relative">
+      <div className="xl:max-w-[1900px] padding-x h-full md:flex md:justify-center md:items-center sm:mx-auto relative">
         {/* Icon */}
         <span className="absolute left-0 bottom-0 md:left-[6%] md:bottom-[8%] z-0">
           <Image

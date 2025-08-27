@@ -38,8 +38,8 @@ const investList = [
 
 const SectionLegalEdu = () => {
   return (
-    <section className="py-20 bg-white ">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto px-4 md:px-5">
+    <section className="py-20 md:py-28 bg-white ">
+      <div className="xl:max-w-[1900px] padding-x mx-auto ">
         <motion.h1
           initial={{
             opacity: 0,

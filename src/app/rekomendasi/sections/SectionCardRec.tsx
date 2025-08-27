@@ -11,7 +11,7 @@ const SectionCardRec = () => {
 
   return (
     <section className="translate-y-[-45px] md:translate-y-[-65px] lg:translate-y-[-100px]  duration-500   ">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] sm:mx-auto w-full px-4 md:px-5 ">
+      <div className="xl:max-w-[1900px] padding-x sm:mx-auto w-full  ">
         <div className="bg-white shadow rounded-2xl md:rounded-4xl p-4 md:p-5 lg:p-7 overflow-hidden ">
           {/* Button  */}
           <div className="flex bg-black relative rounded-lg sm:rounded-full sm:w-fit  sm:mx-auto ">

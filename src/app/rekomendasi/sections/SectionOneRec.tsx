@@ -18,7 +18,7 @@ const SectionOneRec = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="relative lg:max-w-6xl xl:max-w-[1440px] h-full md:flex flex-col space-y-[25px] md:justify-center md:items-center sm:mx-auto px-4 md:px-5">
+      <div className="relative xl:max-w-[1900px] padding-x h-full md:flex flex-col space-y-[25px] md:justify-center md:items-center sm:mx-auto">
         <motion.div
           initial={{ y: 100, scale: 0.9, opacity: 0 }}
           whileInView={{ y: 0, scale: 1, opacity: 1 }}

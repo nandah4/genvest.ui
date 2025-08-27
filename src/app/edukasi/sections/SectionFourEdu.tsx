@@ -5,59 +5,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useState } from "react";
 
-type CardItemProps = {
-  step: number;
-  title: string;
-  selected: number;
-  setSelected: (index: number) => void;
-};
 
-const CardItem = ({ step, title, selected, setSelected }: CardItemProps) => {
-  return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        y: 40,
-        scale: 0.95,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        scale: 1,
-      }}
-      transition={{
-        delay: 0.2,
-        duration: 0.9,
-        ease: [0.25, 0.46, 0.45, 0.94],
-      }}
-      className=" p-5 space-y-[10px] hover:scale-105 duration-500 relative shadow-xs rounded lg:rounded-md bg-minor-grey/50 xl:aspect-[3/2] md:flex flex-col justify-center items-start"
-    >
-      <h3 className="font-helvetica font-bold text-xl md:text-[25px] lg:text-[30px] xl:text-[35px]">
-        {step}
-        <span className="text-base md:text-lg xl:text-[20px] pl-1">/7</span>
-      </h3>
-      <h4 className="text-style-subheadline text-black">{title}</h4>
-      {/* <span className="absolute right-5 top-5 z-10">
-        <Image
-          src="/icons/chart-down.svg"
-          alt="Target"
-          width={10}
-          height={10}
-          className="w-[40px] h-[40px] md:w-[58px] md:h-[58px]"
-        />
-      </span> */}
-
-      <button
-        onClick={() => setSelected(step - 1)}
-        className={`absolute bottom-2 right-2 bg-primary-green lg:bottom-3 lg:right-3 text-[15px] cursor-pointer  h-8 w-8 rounded-full ${
-          step - 1 <= selected! ? "" : "border"
-        } `}
-      >
-        <span>{step - 1 <= selected! ? "✅" : ""}</span>
-      </button>
-    </motion.div>
-  );
-};
 
 const SectionFourEdu = () => {
   const [selectedCard, setSelectedCard] = useState<number>(0);
@@ -66,8 +14,8 @@ const SectionFourEdu = () => {
     setSelectedCard((e) => (index == e ? e - 1 : index));
   };
   return (
-    <section className="bg-white py-20">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto px-4 md:px-5">
+    <section className="bg-white py-20 md:py-28">
+      <div className="xl:max-w-[1900px] padding-x  mx-auto px-4">
         <div className="space-y-7  mb-[40px] md:mb-[50px] lg:mb-20 ">
           <motion.div
             initial={{ y: 30, opacity: 0, scale: 0.9 }}
@@ -109,7 +57,7 @@ const SectionFourEdu = () => {
         </div>
 
         {/* Content When vw <= md */}
-        <div className=" grid grid-cols-1 gap-y-2 md:grid-cols-3 md:max-w-3xl lg:max-w-4xl xl:max-w-6xl md:mx-auto">
+        <div className=" grid grid-cols-1 gap-y-2 md:grid-cols-3 md:max-w-4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-[82rem] md:mx-auto">
           {investmentSteps.map((e, idx) => (
             <React.Fragment key={idx + e.description}>
               <div className="hidden md:block md:col-span-1 pr-5">

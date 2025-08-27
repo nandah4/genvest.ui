@@ -19,8 +19,8 @@ const SectionTipsEdu = () => {
   };
 
   return (
-    <section className="my-20 bg-white py-5 ">
-      <div className="lg:max-w-6xl xl:max-w-[1440px]  duration-500 sm:mx-auto px-4 md:px-5">
+    <section className="py-20 md:py-28 bg-white py-5 ">
+      <div className="xl:max-w-[1900px] padding-x  duration-500 sm:mx-auto ">
         <div className="flex flex-col">
           <motion.h1
             initial={{

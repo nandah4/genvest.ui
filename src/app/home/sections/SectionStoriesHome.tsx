@@ -84,8 +84,8 @@ const SectionStoriesHome = () => {
   ];
 
   return (
-    <section className="py-20 my-20 bg-white">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto px-4 md:px-5">
+    <section className="py-20 md:py-28 my-20 bg-white">
+      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto padding-x">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
