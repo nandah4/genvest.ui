@@ -3,6 +3,69 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
+const stories = [
+  {
+    image: "/images/home/logia.png",
+    title: "Karina - Investasi dengan Pemahaman",
+    shortDesc:
+      "Karina, 23 tahun, memilih belajar investasi dulu sebelum menaruh uangnya.",
+    story: [
+      "Karina adalah seorang mahasiswi akhir yang juga bekerja part-time di sebuah coffee shop. Dari gajinya yang tidak seberapa, ia selalu menyisihkan 20% untuk tabungan dan mencoba berinvestasi. Namun sebelum benar-benar menaruh uang, Karina meluangkan waktu mengikuti kelas online, membaca artikel finansial, hingga berdiskusi dengan mentor mengenai saham, reksa dana, dan risiko tiap instrumen. Ia sadar bahwa pemahaman dasar lebih penting daripada sekadar ikut-ikutan tren.",
+      "Setelah mengetahui profil risikonya yang cenderung moderat, Karina memutuskan berinvestasi di reksa dana pasar uang dan sebagian kecil di saham blue-chip. Dalam dua tahun, portofolionya tumbuh stabil hingga 12% tanpa membuatnya panik ketika harga saham sesekali turun. Dari proses ini, Karina belajar bahwa investasi bukan sekadar mengejar return tinggi, melainkan membangun kebiasaan sehat, punya strategi jangka panjang, dan tetap tenang menghadapi fluktuasi.",
+    ],
+    quiz: [
+      {
+        quest:
+          "Mengapa strategi Karina bisa memberikan hasil yang stabil meskipun ia bukan investor berpengalaman?",
+        answerOptions: [
+          "Karena ia fokus pada edukasi dan memilih instrumen sesuai profil risikonya",
+          "Karena ia mengikuti rekomendasi teman dan tren media sosial",
+          "Karena ia menaruh seluruh uangnya di aset berisiko tinggi",
+        ],
+      },
+      {
+        quest:
+          "Apa pelajaran utama yang bisa diambil dari pengalaman Karina bagi investor pemula?",
+        answerOptions: [
+          "Pentingnya memahami dasar investasi dan tujuan finansial sebelum mulai",
+          "Semakin cepat ikut tren, semakin besar peluang cuan",
+          "Hasil besar selalu datang dari investasi berisiko tinggi",
+        ],
+      },
+    ],
+  },
+  {
+    image: "/images/home/fomo.png",
+    title: "Dimas - Investasi karena FOMO",
+    shortDesc:
+      "Dimas, 22 tahun, ikut-ikutan investasi karena tren teman-temannya.",
+    story: [
+      "Dimas adalah fresh graduate yang baru mendapat pekerjaan pertamanya. Saat melihat grup WhatsApp temannya membicarakan crypto yang sedang 'to the moon', ia merasa ketinggalan. Tanpa pertimbangan matang, ia mengalokasikan seluruh tabungan Rp10 juta untuk membeli token yang sedang viral. Keputusan itu bukan karena riset, melainkan rasa takut kehilangan kesempatan (FOMO).",
+      "Awalnya ia sempat merasakan keuntungan singkat, namun tak lama harga token jatuh hingga ia kehilangan 70% modalnya. Dimas panik dan menyesal, karena tidak memikirkan kebutuhan lain seperti dana darurat atau tujuan finansial jangka panjang. Dari pengalaman pahit ini, ia belajar bahwa mengikuti tren tanpa pemahaman justru bisa membuat seseorang kehilangan uang, dan bahwa edukasi adalah pondasi terpenting sebelum berinvestasi.",
+    ],
+    quiz: [
+      {
+        quest:
+          "Apa risiko terbesar dari keputusan Dimas menginvestasikan seluruh tabungannya di aset hype?",
+        answerOptions: [
+          "Tidak ada diversifikasi sehingga risiko kerugian sangat tinggi",
+          "Ia memilih produk yang terlalu aman dan lambat berkembang",
+          "Ia mengikuti mentor profesional yang salah memberi saran",
+        ],
+      },
+      {
+        quest:
+          "Jika Dimas ingin memperbaiki strategi investasinya ke depan, apa langkah paling bijak yang seharusnya ia lakukan?",
+        answerOptions: [
+          "Belajar memahami instrumen investasi sebelum masuk dan mulai dari yang risikonya rendah",
+          "Menunggu tren berikutnya dan segera masuk agar tidak tertinggal lagi",
+          "Menginvestasikan kembali seluruh gajinya ke aset yang sedang naik",
+        ],
+      },
+    ],
+  },
+];
+
 const SectionStoriesHome = () => {
   const [selectStory, setStory] = useState<number>(-1);
   const [overlay, setOverlay] = useState<boolean>(false);
@@ -20,72 +83,9 @@ const SectionStoriesHome = () => {
     };
   }, [overlay]);
 
-  const stories = [
-    {
-      image: "/images/home/logia.png",
-      title: "Karina - Investasi dengan Pemahaman",
-      shortDesc:
-        "Karina, 23 tahun, memilih belajar investasi dulu sebelum menaruh uangnya.",
-      story: [
-        "Karina adalah seorang mahasiswi akhir yang juga bekerja part-time di sebuah coffee shop. Dari gajinya yang tidak seberapa, ia selalu menyisihkan 20% untuk tabungan dan mencoba berinvestasi. Namun sebelum benar-benar menaruh uang, Karina meluangkan waktu mengikuti kelas online, membaca artikel finansial, hingga berdiskusi dengan mentor mengenai saham, reksa dana, dan risiko tiap instrumen. Ia sadar bahwa pemahaman dasar lebih penting daripada sekadar ikut-ikutan tren.",
-        "Setelah mengetahui profil risikonya yang cenderung moderat, Karina memutuskan berinvestasi di reksa dana pasar uang dan sebagian kecil di saham blue-chip. Dalam dua tahun, portofolionya tumbuh stabil hingga 12% tanpa membuatnya panik ketika harga saham sesekali turun. Dari proses ini, Karina belajar bahwa investasi bukan sekadar mengejar return tinggi, melainkan membangun kebiasaan sehat, punya strategi jangka panjang, dan tetap tenang menghadapi fluktuasi.",
-      ],
-      quiz: [
-        {
-          quest:
-            "Mengapa strategi Karina bisa memberikan hasil yang stabil meskipun ia bukan investor berpengalaman?",
-          answerOptions: [
-            "Karena ia fokus pada edukasi dan memilih instrumen sesuai profil risikonya",
-            "Karena ia mengikuti rekomendasi teman dan tren media sosial",
-            "Karena ia menaruh seluruh uangnya di aset berisiko tinggi",
-          ],
-        },
-        {
-          quest:
-            "Apa pelajaran utama yang bisa diambil dari pengalaman Karina bagi investor pemula?",
-          answerOptions: [
-            "Pentingnya memahami dasar investasi dan tujuan finansial sebelum mulai",
-            "Semakin cepat ikut tren, semakin besar peluang cuan",
-            "Hasil besar selalu datang dari investasi berisiko tinggi",
-          ],
-        },
-      ],
-    },
-    {
-      image: "/images/home/fomo.png",
-      title: "Dimas - Investasi karena FOMO",
-      shortDesc:
-        "Dimas, 22 tahun, ikut-ikutan investasi karena tren teman-temannya.",
-      story: [
-        "Dimas adalah fresh graduate yang baru mendapat pekerjaan pertamanya. Saat melihat grup WhatsApp temannya membicarakan crypto yang sedang 'to the moon', ia merasa ketinggalan. Tanpa pertimbangan matang, ia mengalokasikan seluruh tabungan Rp10 juta untuk membeli token yang sedang viral. Keputusan itu bukan karena riset, melainkan rasa takut kehilangan kesempatan (FOMO).",
-        "Awalnya ia sempat merasakan keuntungan singkat, namun tak lama harga token jatuh hingga ia kehilangan 70% modalnya. Dimas panik dan menyesal, karena tidak memikirkan kebutuhan lain seperti dana darurat atau tujuan finansial jangka panjang. Dari pengalaman pahit ini, ia belajar bahwa mengikuti tren tanpa pemahaman justru bisa membuat seseorang kehilangan uang, dan bahwa edukasi adalah pondasi terpenting sebelum berinvestasi.",
-      ],
-      quiz: [
-        {
-          quest:
-            "Apa risiko terbesar dari keputusan Dimas menginvestasikan seluruh tabungannya di aset hype?",
-          answerOptions: [
-            "Tidak ada diversifikasi sehingga risiko kerugian sangat tinggi",
-            "Ia memilih produk yang terlalu aman dan lambat berkembang",
-            "Ia mengikuti mentor profesional yang salah memberi saran",
-          ],
-        },
-        {
-          quest:
-            "Jika Dimas ingin memperbaiki strategi investasinya ke depan, apa langkah paling bijak yang seharusnya ia lakukan?",
-          answerOptions: [
-            "Belajar memahami instrumen investasi sebelum masuk dan mulai dari yang risikonya rendah",
-            "Menunggu tren berikutnya dan segera masuk agar tidak tertinggal lagi",
-            "Menginvestasikan kembali seluruh gajinya ke aset yang sedang naik",
-          ],
-        },
-      ],
-    },
-  ];
-
   return (
-    <section className="py-20 md:py-28 my-20 bg-white">
-      <div className="lg:max-w-6xl xl:max-w-[1440px] mx-auto padding-x">
+    <section className="padding-y bg-white">
+      <div className="lg:max-w-6xl xl:max-w-[1540px] mx-auto padding-x">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ const SectionStoriesHome = () => {
             ease: [0.25, 0.25, 0.25, 0.75],
             delay: 0.3,
           }}
-          className="text-style-headline text-center  md:w-[80%] xl:w-[65%] mx-auto mb-[20px]"
+          className="text-style-headline text-center md:w-[80%] xl:w-[65%] mx-auto mb-[20px]"
         >
           Paham vs FOMO: Kisah Dua Investor Pemula.
         </motion.h2>
@@ -114,7 +114,7 @@ const SectionStoriesHome = () => {
           Klik untuk membaca cerita, ambil pelajaran, dan uji dirimu lewat quiz.
         </motion.p>
 
-        <div className="flex flex-col gap-y-5">
+        <div className="flex flex-col gap-y-5 md:gap-y-8">
           {stories.map((e, idx) => {
             if (idx == 0) {
               return (
@@ -272,7 +272,9 @@ const SectionStoriesHome = () => {
                       }}
                       className="hidden h-full md:flex flex-col justify-center items-end p-3 gap-y-5"
                     >
-                      <h5 className="title-inner-card text-black !text-end">{e.title}</h5>
+                      <h5 className="title-inner-card text-black !text-end">
+                        {e.title}
+                      </h5>
                       <p className="desc-inner-card text-black !text-end">
                         {e.shortDesc}
                       </p>
@@ -375,7 +377,10 @@ const SectionStoriesHome = () => {
                                   key={i}
                                   className="flex gap-x-4 items-center text-style-subheadline xl:!text-base !text-black"
                                 >
-                                  <input type="checkbox" className="w-5 h-5 accent-primary-green" />
+                                  <input
+                                    type="checkbox"
+                                    className="w-5 h-5 accent-primary-green"
+                                  />
                                   {opt}
                                 </li>
                               ))}
@@ -384,7 +389,7 @@ const SectionStoriesHome = () => {
                         ))}
 
                         <button
-                        onClick={() => setOverlay(false)}
+                          onClick={() => setOverlay(false)}
                           className={`mt-[5px] mb-[30px] cursor-pointer duration-500 w-full md:w-fit md:px-10 rounded-full py-3 bg-primary-green rounded-text-style`}
                         >
                           Submit

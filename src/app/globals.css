@@ -269,3 +269,6 @@
 .padding-x {
   @apply px-4 md:px-6 lg:px-8 xl:px-10;
 }
+.padding-y {
+  @apply py-12 md:py-20  lg:py-28 my-20 md:my-16 lg:my-20;
+}

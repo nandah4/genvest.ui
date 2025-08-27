@@ -68,7 +68,7 @@ const Header = () => {
         } fixed top-0 inset-x-0 z-50`}
       >
         {/* Div to manage maximum width of navbar */}
-        <div className="xl:max-w-[1900px] padding-x duration-500 sm:mx-auto bg-white/95 backdrop-blur-lg md:backdrop-blur-none shadow-lg md:shadow-none md:bg-transparent rounded-lg md:rounded-none py-3.5 md:py-6 md:px-5">
+        <div className="xl:max-w-[1900px] md:px-6 lg:px-8 xl:px-10 duration-500 sm:mx-auto bg-white/95 backdrop-blur-lg md:backdrop-blur-none shadow-lg md:shadow-none md:bg-transparent rounded-lg md:rounded-none py-3.5 md:py-6 ">
           <div className="flex justify-between items-center relative">
             {/* Logo */}
             <div className="flex gap-x-4 items-center pl-3 md:pl-0">

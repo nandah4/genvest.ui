@@ -6,9 +6,9 @@ import Link from "next/link";
 const CtaSectionHome = () => {
   return (
     <section className="w-full padding-x mb-10">
-      <div className=" xl:max-w-[1900px] sm:mx-auto bg-primary-green rounded-3xl relative py-28 2xl:py-40 overflow-hidden">
+      <div className=" xl:max-w-[1900px] sm:mx-auto bg-primary-green rounded-3xl relative py-24 2xl:py-40 overflow-hidden">
         <div className="hidden sm:block absolute z-0 -right-15 -bottom-25 h-fit w-fit">
-          <div className=" blur-[3px]  h-[300px] w-[250px] relative">
+          <div className=" h-[300px] w-[250px] relative">
             <Image src="/images/home/rocket.png" alt="Failed Pic" fill />
           </div>
         </div>
@@ -25,7 +25,7 @@ const CtaSectionHome = () => {
           {/* Image */}
           <div className="hidden lg:block  col-span-1">
             <div className="absolute z-0 left-0 xl:left-10   -bottom-2 h-fit w-fit">
-              <div className=" lg:h-[400px] lg:w-[540px] xl:h-[450px] xl:w-[590px] relative">
+              <div className=" lg:h-[400px] lg:w-[540px] xl:h-[430px] xl:w-[560px] relative">
                 <Image
                   src="/images/home/ass-cta-home-left.png"
                   alt="Failed Pic"
@@ -38,7 +38,7 @@ const CtaSectionHome = () => {
           {/* Text */}
           <div className="lg:col-span-1 relative z-10 h-full flex gap-y-8 px-2 flex-col items-center justify-center lg:items-start lg:pr-10">
             <h1 className="text-style-headline text-black uppercase !font-normal text-center lg:text-start sm:px-10 md:px-20 lg:px-0">
-              Investasi Itu Perjalanan, Bukan Kejar-Kejaran.
+              Investasi Itu Perjalanan, Bukan Kejar-Kejaran‼️.
             </h1>
             <p className="px-1 rounded text-style-subheadline text-black text-center lg:text-start">
               Biar gak sekadar ikut tren doang, yuk kenali tips sampai

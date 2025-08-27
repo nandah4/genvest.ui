@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SectionThreeHome = () => {
   return (
-    <section className="py-20 md:py-28 my-20 bg-white">
+    <section className="padding-y  bg-white">
       <div className="xl:max-w-[1900px] padding-x mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 xl:gap-x-10 gap-y-10">
           {/* Column Headline */}

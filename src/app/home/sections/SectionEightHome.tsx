@@ -50,7 +50,7 @@ const ReviewCard = ({
 };
 const SectionEightHome = () => {
   return (
-    <section className="py-20 md:py-28">
+    <section className="padding-y !mb-0">
       <div>
         {/* Headline */}
         <div className="space-y-5  px-4 md:px-5">

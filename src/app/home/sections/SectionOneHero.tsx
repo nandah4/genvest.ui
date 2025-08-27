@@ -67,7 +67,7 @@ const SectionOneHero = ({
           <div className="h-full grid grid-cols-1 lg:grid-cols-5">
             <div className="order-2 lg:order-none col-span-3 lg:flex lg:items-center">
               {/* Headline */}
-              <div className="flex flex-col gap-y-[25px] lg:gap-y-[35px] ">
+              <div className="flex flex-col gap-y-[30px] lg:gap-y-[35px] ">
                 <motion.h1
                   initial="hidden"
                   whileInView="visible"
@@ -164,7 +164,7 @@ const SectionOneHero = ({
                 </motion.p>
 
                 {/* Statistik */}
-                <div className="flex lg:flex-col gap-x-[10px] lg:gap-y-[15px]">
+                <div className="flex lg:flex-col gap-x-[15px] lg:gap-y-[15px]">
                   <motion.div
                     initial={{ opacity: 0, y: 40, scale: 0.95 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}

@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const SectionOneEdu = () => {
-  const text =
-    "Udah Tertarik, Mau Action.";
+  const text = "Udah Tertarik, Mau Action.";
 
   // Split text into words for word-by-word animation
   const words = text.split(" ");
   return (
     <section
-      className="bg-primary-green h-fit pt-24 md:pt-28 lg:pt-0 pb-[75px] md:p-0 md:h-[400px] lg:h-[450px] xl:h-[480px] "
+      className="bg-primary-green h-fit pt-32 lg:pt-0 pb-[75px] md:p-0 md:h-[500px] lg:h-[550px] xl:h-[480px] relative"
       style={{
         backgroundImage: "url(/images/home/patter-faq.png)",
         backgroundSize: "cover",
@@ -18,29 +17,30 @@ const SectionOneEdu = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="xl:max-w-[1900px] padding-x h-full md:flex md:justify-center md:items-center sm:mx-auto relative">
+      <div className="xl:max-w-[1900px] padding-x h-full md:flex md:justify-center md:items-center sm:mx-auto">
         {/* Icon */}
-        <span className="absolute left-0 bottom-0 md:left-[6%] md:bottom-[8%] z-0">
-          <Image
-            src="/icons/education/chart-down-white.svg"
-            alt="Target"
-            width={10}
-            height={10}
-            className="w-[50px] h-[50px] md:w-[68px] md:h-[68px]"
-            priority
-          />
-        </span>
+        <div className="absolute left-3 bottom-8 md:left-[4%] md:bottom-[8%] z-0">
+          <div className="w-[70px] h-[70px] md:w-[90px] md:h-[90px]  lg:w-[110px] lg:h-[110px] relative">
+            <Image
+              src="/icons/education/arrow-down.png"
+              alt="Target"
+              fill
+              priority
+            />
+          </div>
+        </div>
 
-        <span className="absolute right-0 top-0 md:right-[10%] md:top-[30%] z-0 -rotate-90">
-          <Image
-            src="/icons/education/chart-down-white.svg"
-            alt="Target"
-            width={10}
-            height={10}
-            className="w-[50px] h-[50px] md:w-[68px] md:h-[68px]"
-            priority
-          />
-        </span>
+        {/* Icon 2*/}
+        <div className="absolute right-3 top-20 md:right-[2%] md:top-[35%] lg:top-[30%] z-0">
+          <div className="w-[70px] h-[70px] -rotate-90  md:w-[90px] md:h-[90px] lg:w-[110px] lg:h-[110px]  relative">
+            <Image
+              src="/icons/education/arrow-down.png"
+              alt="Target"
+              fill
+              priority
+            />
+          </div>
+        </div>
 
         {/* Headline */}
         <div className="flex flex-col gap-y-[25px] items-center relative">
@@ -60,7 +60,6 @@ const SectionOneEdu = () => {
                 className="w-6 h-6 rounded-icon-width"
               />
             </div>
-
           </motion.div>
 
           <motion.h1
@@ -97,18 +96,19 @@ const SectionOneEdu = () => {
           </motion.h1>
 
           <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, margin: "-50px" }}
-          transition={{
-            duration: 0.7,
-            ease: [0.25, 0.25, 0.25, 0.75],
-            delay: 0.65,
-          }}
-          className="text-style-subheadline mx-auto text-black text-center"
-        >
-          Sebelum lompat, pastikan kamu tahu pijakannya. Edukasi ini bikin langkahmu lebih aman.
-        </motion.p>
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, margin: "-50px" }}
+            transition={{
+              duration: 0.7,
+              ease: [0.25, 0.25, 0.25, 0.75],
+              delay: 0.65,
+            }}
+            className="text-style-subheadline mx-auto text-black text-center"
+          >
+            Sebelum lompat, pastikan kamu tahu pijakannya. Edukasi ini bikin
+            langkahmu lebih aman.
+          </motion.p>
         </div>
       </div>
     </section>

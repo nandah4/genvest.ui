@@ -43,12 +43,19 @@ Membantu kamu memahami investasi dengan cara yang simpel, mengendalikan FOMO, da
 <h4> 🤔 2. Buka dari Hosting </h4>
 Salin URL di bawah ini, dan paste di web browser mu:
 
-   ```bash
-   https://genvest-ui.vercel.app/
+```bash
+https://genvest-ui.vercel.app/
 
-   ```
+```
 
-<h4> 🤔 3. Flow Pengguna </h4>
+<h4> 💪 3. Fitur dan Teknologi </h4>
+
+- **Responsive Design** – Optimal di semua device (Mobile, Tablet, dan Desktop)
+- **Modern Styling and Animation Framework** – Framer untuk animasi dan Tailwindcss untuk styling yang konsisten
+- **Interactive Contents** – Hook dan Framer untuk membantu dalam pembuatan konten yang dinamis
+
+
+<h4> 🤔 4. Flow Pengguna </h4>
 
 1. Buka website → masuk ke halaman beranda.
 
@@ -63,4 +70,3 @@ Salin URL di bawah ini, dan paste di web browser mu:
 6. ConsulGen → konsultasi interaktif tentang investasi dengan AI. (Klik Profile untuk kembali ke Beranda)
 
 7. Selesai 🎉 → Selamat mencoba fitur-fitur Genvest 🚀
-

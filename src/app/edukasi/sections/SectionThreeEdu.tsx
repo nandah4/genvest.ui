@@ -20,7 +20,7 @@ const SectionThreeEdu = () => {
   }, [overlayOpen]);
 
   return (
-    <section className=" py-20 md:py-28 bg-white relative">
+    <section className="padding-y !my-0 bg-white relative">
       <div className="xl:max-w-[1900px] padding-x sm:mx-auto w-full ">
         {/* Headline */}
         <div className="mb-[40px] lg:mb-[50px] gap-y-5 md:gap-0 ">
@@ -63,7 +63,7 @@ const SectionThreeEdu = () => {
         </div>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[15px] gap-x-[15px] ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-[15px] sm:gap-x-4 sm:gap-y-4">
           {instrumentData.map((e, idx) => {
             return (
               <motion.div
@@ -80,7 +80,7 @@ const SectionThreeEdu = () => {
                   setOverlay(true);
                   setIsModals(idx);
                 }}
-                className="bg-primary-green cursor-pointer shadow-xs rounded-md overflow-hidden flex items-center flex-row"
+                className="bg-primary-green cursor-pointer shadow-xs rounded-lg overflow-hidden flex items-center flex-row"
               >
                 <div className="h-full w-[100px] overflow-hidden flex items-center">
                   <Image
@@ -111,7 +111,7 @@ const SectionThreeEdu = () => {
           <>
             <div
               onClick={() => setOverlay(false)}
-              className="z-50 fixed inset-0 bg-black/60 flex items-center justify-center px-4 sm:px-5"
+              className="z-50 fixed inset-0 bg-black/60 flex items-center justify-center padding-x"
             >
               <motion.div
                 initial={{ y: 30, opacity: 0, scale: 0.95 }}

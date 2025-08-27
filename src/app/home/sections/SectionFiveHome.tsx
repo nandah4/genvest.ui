@@ -11,7 +11,7 @@ const SectionFiveHome = () => {
   return (
     <>
       <section
-        className="bg-minor-grey/40 py-20 md:py-28 overflow-hidden relative my-20 "
+        className="bg-minor-grey/40 py-24 md:py-28 overflow-hidden relative"
         style={{
           backgroundImage: "url(/images/home/patter-faq.png)",
           backgroundSize: "cover",
@@ -19,7 +19,7 @@ const SectionFiveHome = () => {
       >
         <div className="absolute h-[400px] w-[400px] md:h-[500px] md:w-[500px] xl:h-[700px] xl:w-[700px] duration-700  rounded-full bg-primary-green/80 bottom-[-50%] sm:bottom-[-65%] md:bottom-[-80%] xl:bottom-[-110%] right-1/2 translate-x-[50%] z-0 blur-3xl"></div>
         <div className="z-10 xl:max-w-[1900px] duration-500 sm:mx-auto padding-x ">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-y-[40px]">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-y-[60px]">
             <div className="md:col-span-3  md:order-2 md:flex md:justify-end relative">
               <motion.h1
                 className="font-helvetica w-[95%] mx-auto lg:w-[90%] uppercase text-[35px] leading-11 md:text-[40px] md:leading-14 lg:text-[45px] lg:leading-16 xl:text-[50px] xl:leading-[70px]  z-10 text-center md:text-start font-medium relative"

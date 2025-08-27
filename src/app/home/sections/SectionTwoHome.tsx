@@ -30,12 +30,12 @@ const SectionTwoHome = ({
   return (
     <section
       ref={refScroll}
-      className="w-full h-fit md:h-[550px] bg-white pt-20 md:pt-0"
+      className="w-full h-fit md:h-[560px] bg-white pt-24 md:pt-0"
     >
-      <div className="h-full xl:max-w-[1900px] padding-x duration-500 md:mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-[25px] sm:gap-y-[20px] h-full ">
+      <div className="h-full xl:max-w-[1900px] duration-500 md:mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-[25px] h-full ">
           {/* Headline and Subheadline */}
-          <div className="lg:col-span-2  h-full flex flex-col gap-y-[15px] md:gap-y-[20px] md:pr-5 md:pt-[140px] lg:pt-[100px]">
+          <div className="lg:col-span-2 h-full flex flex-col gap-y-[15px] md:gap-y-[20px] padding-x md:pr-5 md:pt-[150px] lg:pt-[120px]">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ const SectionTwoHome = ({
 
           {/* Card */}
           <div className="lg:col-span-3 flex flex-col justify-end border-b">
-            <div className="flex justify-center md:justify-end px-4 md:px-5">
+            <div className="flex justify-center md:justify-end">
               <motion.div
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -78,7 +78,7 @@ const SectionTwoHome = ({
                   ease: [0.25, 0.25, 0.25, 0.7],
                   delay: 0.4,
                 }}
-                className=" flex items-center gap-x-5 "
+                className=" flex items-center gap-x-5 padding-x"
               >
                 <p className="font-helvetica text-sm text-text-sub-headline">
                   Scroll Ke {progress * 100 > 90 ? "Kiri" : "Kanan"} Untuk
@@ -124,7 +124,7 @@ const SectionTwoHome = ({
                       delay: idx * 0.15,
                     }}
                     tabIndex={0}
-                    className="flex-shrink-0 focus:translate-y-[0px] shadow-md translate-y-[10px] lg:translate-y-[20px] hover:translate-y-[0px] duration-300 h-fit rounded-lg w-[370px] sm:w-[400px] lg:w-[450px] bg-primary-green p-[25px] pb-[150px]"
+                    className="flex-shrink-0 focus:translate-y-[0px] shadow-md translate-y-[10px] lg:translate-y-[20px] hover:translate-y-[0px] duration-300 h-fit rounded-xl w-[380px] sm:w-[400px] md:w-[430px] lg:w-[450px] bg-primary-green p-[25px] pb-[150px]"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0.8 }}
