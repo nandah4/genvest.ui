@@ -32,7 +32,7 @@ const SectionTwoHome = ({
       ref={refScroll}
       className="w-full h-fit md:h-[500px] bg-white pt-20 md:pt-0"
     >
-      <div className="h-full lg:max-w-6xl xl:max-w-[1440px]  duration-500 md:mx-auto">
+      <div className="h-full xl:max-w-[1900px] padding-x  duration-500 md:mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-[25px] sm:gap-y-[20px] h-full ">
           {/* Headline and Subheadline */}
           <div className="lg:col-span-2  h-full flex flex-col gap-y-[15px] md:gap-y-[20px] gap px-4 md:px-5 md:pt-[140px] lg:pt-[100px]">

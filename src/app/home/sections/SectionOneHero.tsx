@@ -40,7 +40,7 @@ const SectionOneHero = ({
     >
       <div className="w-full h-full relative">
         <div className="bg-black/65 absolute inset-0 z-0"></div>
-        <div className="relative h-full z-10 lg:max-w-6xl xl:max-w-[1440px]  duration-500 sm:mx-auto pt-24 md:pt-28 lg:py-0 pb-14 md:pb-16 px-4 md:px-5">
+        <div className="relative h-full z-10 duration-500 sm:mx-auto pt-28 md:pt-40 lg:py-0 pb-14 md:pb-16 xl:max-w-[1900px]  padding-x">
           {/* Icon Chart Down */}
           <span className="absolute left-[8%] bottom-[8%] -z-10">
             <Image

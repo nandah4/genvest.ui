@@ -124,7 +124,7 @@ const CardExpandedMain = () => {
                           className="underline font-helvetica text-[15px] text-white mt-[20px]"
                           onClick={() => setPickedPoint(index)}
                         >
-                          Klik Untuk Baca Selengkapnya
+                           Baca Selengkapnya
                         </p>
                         <div
                           className="bg-primary-green rounded-full h-fit p-1"
