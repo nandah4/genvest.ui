@@ -14,8 +14,8 @@ const SectionFourEdu = () => {
     setSelectedCard((e) => (index == e ? e - 1 : index));
   };
   return (
-    <section className="bg-white py-20 md:py-28">
-      <div className="xl:max-w-[1900px] padding-x  mx-auto px-4">
+    <section className="bg-white padding-y !mb-0 ">
+      <div className="xl:max-w-[1540px]  padding-x mx-auto">
         <div className="space-y-7  mb-[40px] md:mb-[50px] lg:mb-20 ">
           <motion.div
             initial={{ y: 30, opacity: 0, scale: 0.9 }}
@@ -31,7 +31,7 @@ const SectionFourEdu = () => {
               viewport={{ margin: "-50px", once: false }}
               className="text-style-subheadline lg:!text-base !font-normal"
             >
-              Langkah Langkah
+              Langkah Langkah 🐾
             </motion.p>
           </motion.div>
           <motion.h1
@@ -57,7 +57,7 @@ const SectionFourEdu = () => {
         </div>
 
         {/* Content When vw <= md */}
-        <div className=" grid grid-cols-1 gap-y-2 md:grid-cols-3 md:max-w-4xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-[82rem] md:mx-auto">
+        <div className=" grid grid-cols-1 gap-y-2  md:grid-cols-3 lg:max-w-5xl xl:max-w-[1350px] 2xl:max-w-[1500px] mx-auto">
           {investmentSteps.map((e, idx) => (
             <React.Fragment key={idx + e.description}>
               <div className="hidden md:block md:col-span-1 pr-5">
@@ -69,11 +69,11 @@ const SectionFourEdu = () => {
                     delay: idx * 0.1 + 0.3,
                   }}
                   viewport={{ once: false, margin: "-30px" }}
-                  className="text-style-subheadline md:!text-base"
+                  className="text-style-subheadline !text-black md:!text-base"
                 >
                   {selectedCard >= idx
-                    ? "Yeay, Kamu sudah melewati tahap ini 🎉"
-                    : "Yahh, Kamu belum melewati tahap ini 😩"}
+                    ? "Yeay, Kamu sudah melewati tahap ini"
+                    : <span className="text-gray-400">Yahh, Kamu belum melewati tahap ini</span>}
                 </motion.p>
               </div>
               <motion.div

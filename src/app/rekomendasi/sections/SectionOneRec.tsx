@@ -24,9 +24,9 @@ const SectionOneRec = () => {
           whileInView={{ y: 0, scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
           viewport={{ once: false, margin: "-30px" }}
-          className="absolute -left-14 -bottom-32 md:-bottom-16 h-fit w-fit"
+          className="absolute -left-16 -bottom-32 md:-bottom-16 h-fit w-fit"
         >
-          <div className="relative w-[160px] h-[160px] md:w-[260px] md:h-[260px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] -rotate-12">
+          <div className="relative w-[170px] h-[170px] md:w-[260px] md:h-[260px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px] -rotate-12">
             <Image
               src="/images/recommendation/search-2.png"
               alt="Find Icon"
@@ -39,9 +39,9 @@ const SectionOneRec = () => {
           whileInView={{ y: 0, scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
           viewport={{ once: false, margin: "-30px" }}
-          className="absolute -right-16 -bottom-36 md:-bottom-20 h-fit w-fit"
+          className="absolute -right-18 -bottom-36 md:-bottom-20 h-fit w-fit"
         >
-          <div className="relative w-[170px] h-[170px]  md:w-[270px] md:h-[270px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px]">
+          <div className="relative w-[180px] h-[180px]  md:w-[270px] md:h-[270px] lg:w-[300px] lg:h-[300px] xl:w-[350px] xl:h-[350px]">
             <Image
               src="/images/recommendation/btc-g.png"
               alt="Find Icon"

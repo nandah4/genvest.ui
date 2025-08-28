@@ -5,7 +5,7 @@ import Link from "next/link";
 const CtaSectionEdu = () => {
   return (
     <section className="w-full padding-x mb-10">
-      <div className=" xl:max-w-[1900px] sm:mx-auto bg-primary-green rounded-3xl relative py-28 2xl:py-40 overflow-hidden">
+      <div className=" xl:max-w-[1900px] sm:mx-auto bg-primary-green rounded-3xl relative py-24 2xl:py-40 overflow-hidden">
         <div className="hidden sm:block absolute z-0 -right-10 -bottom-10 md:-bottom-20 lg:-bottom-30 h-fit w-fit">
           <div className="h-[200px] w-[200px]  lg:h-[300px] lg:w-[300px] rotate-12 relative">
             <Image src="/images/education/toolkit.png" alt="Failed Pic" fill />
@@ -37,7 +37,7 @@ const CtaSectionEdu = () => {
           {/* Text */}
           <div className="lg:col-span-1 relative z-10 h-full flex gap-y-8 px-2 flex-col items-center justify-center lg:items-start lg:pr-10">
             <h1 className="text-style-headline text-black uppercase !font-normal text-center lg:text-start sm:px-10 md:px-20 lg:px-0">
-              Yuk, Pilih Investasi Sesuai Gayamu
+              Yuk, Pilih Investasi Sesuai Gayamu 🚀
             </h1>
             <p className="px-1 rounded text-style-subheadline text-black text-center lg:text-start">
               Temukan rekomendasi investasi yang sesuai tujuanmu, plus cek

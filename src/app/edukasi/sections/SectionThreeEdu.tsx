@@ -20,7 +20,7 @@ const SectionThreeEdu = () => {
   }, [overlayOpen]);
 
   return (
-    <section className="padding-y !my-0 bg-white relative">
+    <section className=" bg-white relative">
       <div className="xl:max-w-[1900px] padding-x sm:mx-auto w-full ">
         {/* Headline */}
         <div className="mb-[40px] lg:mb-[50px] gap-y-5 md:gap-0 ">
@@ -88,7 +88,7 @@ const SectionThreeEdu = () => {
                     alt={e.title}
                     height={20}
                     width={20}
-                    className="w-16 h-16 lg:w-20 lg:h-20 xl:w-20 xl:h-20  translate-x-[-20px]"
+                    className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24  translate-x-[-20px]"
                   />
                 </div>
                 <div className="py-4 md:py-5 px-3 lg:px-6 space-y-1 w-full">

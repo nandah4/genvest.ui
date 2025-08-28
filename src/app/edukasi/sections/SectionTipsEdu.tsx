@@ -19,7 +19,7 @@ const SectionTipsEdu = () => {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-white py-5 ">
+    <section className="padding-y bg-white ">
       <div className="xl:max-w-[1900px] padding-x  duration-500 sm:mx-auto ">
         <div className="flex flex-col">
           <motion.h1
@@ -181,7 +181,7 @@ const SectionTipsEdu = () => {
                     alt="Check"
                     width={100}
                     height={100}
-                    className="w-6 h-6 lg:w-7 lg:h-7"
+                    className="w-6 h-6 lg:w-8 lg:h-8"
                   />
                 </motion.div>
                 <motion.p
@@ -225,7 +225,7 @@ const SectionTipsEdu = () => {
                     alt="Don't"
                     width={100}
                     height={100}
-                    className="w-5 h-5 lg:w-6 lg:h-6 translate-y-[3px]"
+                    className="w-5 h-5 lg:w-7 lg:h-7 translate-y-[3px]"
                   />
                 </motion.div>
                 <motion.p

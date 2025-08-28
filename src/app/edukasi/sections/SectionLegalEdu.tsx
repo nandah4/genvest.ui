@@ -38,7 +38,7 @@ const investList = [
 
 const SectionLegalEdu = () => {
   return (
-    <section className="py-20 md:py-28 bg-white ">
+    <section className="bg-white ">
       <div className="xl:max-w-[1900px] padding-x mx-auto ">
         <motion.h1
           initial={{
@@ -95,8 +95,8 @@ const SectionLegalEdu = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-5 lg:gap-x-10">
-          <div className=" sm:col-span-1 order-2 sm:order-none mt-5 space-y-[10px] md:space-y-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-8 sm:gap-y-0 sm:gap-x-5 lg:gap-x-10">
+          <div className=" sm:col-span-1 order-2 sm:order-none space-y-5 md:space-y-6">
             <motion.h5
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +108,7 @@ const SectionLegalEdu = () => {
               }}
               className="title-inner-card text-center"
             >
-              Ilegal 
+              Hati-Hati, Ilegal 
             </motion.h5>
             <ul className="space-y-5">
               {investList.map((e, idx) => {
@@ -161,7 +161,7 @@ const SectionLegalEdu = () => {
             </motion.div>
           </div>
 
-          <div className=" sm:col-span-1 order-3 sm:order-none mt-5 space-y-[10px] md:space-y-5">
+          <div className=" sm:col-span-1 order-3 sm:order-none space-y-5 md:space-y-6">
             <motion.h5
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -173,7 +173,7 @@ const SectionLegalEdu = () => {
               }}
               className="title-inner-card text-center"
             >
-              Legal
+              Resmi, Aman 
             </motion.h5>
             <ul className="space-y-5">
               {investList.map((e, idx) => {

@@ -4,7 +4,7 @@ import Link from "next/link";
 const LoginPage = () => {
   return (
     <section className="h-dvh  bg-white w-full flex justify-center items-center">
-      <div className=" w-full h-full ">
+      <div className=" w-full h-full max-w-[1900px]">
         <div className="grid grid-cols-1 lg:grid-cols-5 w-full h-full">
           <div className="col-span-1 lg:col-span-2 flex items-center justify-center w-full px-5">
             <div className="gap-y-7 flex flex-col max-w-md w-full ">
@@ -73,7 +73,7 @@ const LoginPage = () => {
                   Lupa Password?
                 </p>
                 <Link href="/">
-                  <button className="py-3 w-full cursor-pointer hover:scale-105 duration-500 shadow bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full">
+                  <button className="py-3 w-full cursor-pointer hover:scale-105 duration-500 shadow-xs bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full">
                     Masuk
                   </button>
                 </Link>
@@ -81,7 +81,7 @@ const LoginPage = () => {
                 <p className="my-1 text-style-subheadline !font-normal lg:!text-base !text-center">
                   Atau
                 </p>
-                <button className="py-3 cursor-pointer hover:scale-105 duration-500 shadow w-full bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full flex gap-x-3 items-center justify-center">
+                <button className="py-3 cursor-pointer hover:scale-105 duration-500 shadow-xs w-full bg-primary-green text-style-subheadline lg:!text-base !font-normal rounded-full flex gap-x-3 items-center justify-center">
                   <div className=" h-6 w-6 relative ">
                     <Image src="/icons/google.svg" alt="Genvest Logo" fill />
                   </div>
@@ -97,19 +97,9 @@ const LoginPage = () => {
 
           <div className="hidden lg:flex lg:col-span-3 w-full p-5">
             <div className="w-full h-full  relative rounded-xl overflow-hidden">
-              <div className="bg-black/70 z-10 absolute inset-0"></div>
-              <div className="absolute left-1/2 translate-x-[-50%] top-1/2 translate-y-[-50%] z-10 w-[400px] h-[220px] xl:w-[500px] xl:h-[320px] rotate-3">
-                <Image src="/images/home-pic.png" alt="Bg Login" fill />
-              </div>
-
-              <div className="px-4 -rotate-3 py-3 w-fit blur-[2px] h-fit bg-white rounded-full z-10 absolute left-20 top-1/2 translate-y-[-50%]">
-                <p className="font-helvetica text-xl">😁 Genvest Asik!</p>
-              </div>
-              <div className="px-4 py-3 w-fit blur-[2px] h-fit bg-white rounded-full z-10 absolute right-20 top-1/2 translate-y-[-0%]">
-                <p className="font-helvetica text-xl">😎 Genvest Keren!</p>
-              </div>
+              <div className="bg-black/50 z-10 absolute inset-0"></div>
               <Image
-                src="/images/login-asset.jpg"
+                src="/images/log-asss.jpg"
                 alt="Bg Login"
                 fill
                 className="object-cover"
